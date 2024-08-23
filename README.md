@@ -61,4 +61,4 @@ useFrame((state, delta) => {
 });
 ```
 
-Drei is a companion library for React Three fibre.
+Drei is a companion library for React Three Fiber.
