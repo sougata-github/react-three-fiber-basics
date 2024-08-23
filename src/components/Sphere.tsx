@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import * as THREE from "three";
 import { useFrame } from "react-three-fiber";
+// import { MeshWobbleMaterial } from "@react-three/drei";
 
 interface SphereProps {
   position: [number, number, number];
@@ -29,7 +30,8 @@ const Sphere = ({ position, size, color }: SphereProps) => {
       onPointerLeave={() => setIsHover(false)}
     >
       <sphereGeometry args={size} />
-      <meshStandardMaterial color={isHover ? "green" : "grey"} wireframe />
+      <meshStandardMaterial color={isHover ? "green" : color} wireframe />
+      {/* <MeshWobbleMaterial color="hotpink" wireframe /> */}
     </mesh>
   );
 };

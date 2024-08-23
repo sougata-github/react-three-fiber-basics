@@ -62,3 +62,5 @@ useFrame((state, delta) => {
 ```
 
 Drei is a companion library for React Three fibre.
+
+Leva is a React-first components GUI.
